@@ -21,9 +21,7 @@ pip install scorecardpyEC
 
 # 使用说明 （Usage）:
 ```
-import sys
-sys.path.append('./')
-from Bin import ECBin
+from scorecardpyEC import ECBin
 import numpy as np
 import pandas as pd
 import scorecardpy as sc
