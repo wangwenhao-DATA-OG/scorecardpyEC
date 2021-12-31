@@ -597,7 +597,7 @@ if __name__ == '__main__':
             {特征名:最小占比,...}.指定每个列的最小占比，当小于该占比时，该列就需要被合并。没有出现在这个dict里的特征，则最小占比为special_value_count_distr_limit_default。默认是None，即所有特征的最小占比全部为special_value_count_distr_limit_default。
             {col_name:min of count_distr,...}.Point a value for every columns individually.When less than this value,this feature need to be merged.The min distribution of column not in dict is special_value_count_distr_limit_default.The default is None means that the min value of distribution of all columns is set by special_value_count_distr_limit_default.
             
-        special_value_count_distr_limit_default : int, optional
+        special_value_count_distr_limit_default : float, optional
             默认的最小特殊值占比，如果没有在special_value_count_distr_limit中指定该列的最小特殊值占比，则该列的最小特殊值占比为special_value_count_distr_limit_default。默认是0.01
             If not pointting a min of special value count_distr to a feature,it will be set to special_value_count_distr_limit_default . The default is 0.01.
 
